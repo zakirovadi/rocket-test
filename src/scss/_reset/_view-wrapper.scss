@@ -23,7 +23,20 @@ VIEW-WRAPPER
 .container {
   position: relative;
   min-width: 320px;
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 15px;
+
+  // @media screen and (min-width: 1025px){
+  //   max-width: 950px;
+  // }
+  @media screen and (min-width: 1200px){
+    max-width: 1100px;
+  }
+  @media screen and (min-width: 1400px){
+    max-width: 1200px;
+  }
+  @media screen and (min-width: 1920px){
+    max-width: 1440px;
+  }
 }
