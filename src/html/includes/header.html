@@ -11,24 +11,45 @@
   </head>
   <body>
     <header>
+
       <div class="header container">
+
+        <div class="nav-burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
         <img class="header-logo" src="img/tomt_logo.svg" alt="Logo">
-        <div class="header-adress header-item">
-          <img class="header-icon" src="img/icon/Geo.svg" alt="">
-          <span>г.Москва, ул.Парковая 13-я,</br> д.27, корп.1, комната 4</span>
-        </div>
-        <div class="header-time header-item">
-          <img class="header-icon" src="img/icon/Clock.svg" alt="">
-          <span>Пн-Пт: 9.00 до 18.00 </br> Сб-Вс: выходной</span>
-        </div>
-        <div class="header-contact header-item">
-          <img class="header-icon" src="img/icon/Phone.svg" alt="">
-          <div>
-            <a href="tel:+7-977-258-17-90">+7(977)258-17-90</a></br>
-            <a href="mailto:zapros.tomt@gmail.com">zapros.tomt@gmail.com</a>  
+        
+        <div class="header-info">
+          <div class="header-adress header-item">
+            <img class="header-info-icon" src="img/icon/Geo.svg" alt="">
+            <div class="header-info-text">
+              <span>г.Москва, ул.Парковая 13-я,</span>
+              <span> д.27, корп.1, комната 4</span>  
+            </div>
           </div>
+          <div class="header-time header-item">
+            <img class="header-info-icon" src="img/icon/Clock.svg" alt="">
+            <div class="header-info-text">
+              <span>Пн-Пт: 9.00 до 18.00 </span>
+              <span> Сб-Вс: выходной</span>  
+            </div>
+          </div>
+          <div class="header-contact header-item">
+            <img class="header-info-icon" src="img/icon/Phone.svg" alt="">
+            <div class="header-links header-info-text">
+              <a class="header-link-phone href="tel:+7-977-258-17-90">+7(977)258-17-90</a>
+              <a class="header-link-email href="mailto:zapros.tomt@gmail.com">zapros.tomt@gmail.com</a>  
+            </div>
+          </div> 
         </div>
-        <input type="button" class="header-call button" value="Заказать звонок">
+
+        <button class="header-btn button">
+          <span>Заказать звонок</span>
+          <i class="fas fa-phone-alt"></i>
+        </button> 
       </div>
 
       <div class="header-line"></div>
@@ -36,7 +57,7 @@
       <nav class="container navigation">
         <div class="nav-item">главная</div>
         <div class="nav-line"></div>
-        <div class="nav-item">услуги <i class="fas fa-chevron-down"></i></div>
+        <div class="nav-item nav-link-service">услуги <i class="fas fa-chevron-down"></i></div>
         <div class="nav-line"></div>
         <div class="nav-item">о компании</div>
         <div class="nav-line"></div>

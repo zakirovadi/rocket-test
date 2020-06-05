@@ -9,7 +9,7 @@ html {
   font-family: $base-font; // (_main/fonts.scss)
   line-height: $base-line-height; // (_main/view-text.scss)
   font-size: $base-md-font-size; // (_main/view-text.scss)
-  @media (min-width: 320px) and (max-width: 1024px) {
+  @media (min-width: 320px) and (max-width: 1100px) {
     font-size: $base-sm-font-size; // (_main/view-text.scss)
   }
   @media (min-width: 1441px) {

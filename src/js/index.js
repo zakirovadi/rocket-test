@@ -1,4 +1,5 @@
 import $ from 'jquery'
+import './header'
 window.jQuery = $;
 window.$ = $;
 
