@@ -5,27 +5,30 @@
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
 <section class="banner">
-  <img src="img/Banner.jpg" alt="Banner">
+  <img class="banner-img" src="img/Banner.jpg" alt="Banner">
 
-  <div class="banner-text container">
-    <h1></h1>
-
-    <div class="banner-list">
-      <div class="banner-list-item">
-        <i></i>
-        <span></span>
-      </div>      
-      <div class="banner-list-item">
-        <i></i>
-        <span></span>
-      </div>      
-      <div class="banner-list-item">
-        <i></i>
-        <span></span>
+  <div class="banner-text">
+    <div class="container banner-container">
+      <h1><b>Обслуживание и ремонт</b></br>медицинской техники</h1>
+  
+      <div class="banner-list">
+        <div class="banner-list-item">
+          <img src="img/icon/Economy.svg" alt="">
+          <h4>Экономия</h4>
+        </div>      
+        <div class="banner-list-item">
+          <img src="img/icon/Connection.svg" alt="">
+          <h4>Всегда на связи</h4>
+        </div>      
+        <div class="banner-list-item">
+          <img src="img/icon/Service.svg" alt="">
+          <h4>Качественный сервис</h4>
+        </div>
       </div>
+  
+      <button class="button banner-btn">Оформить заявку <i class="fas fa-long-arrow-alt-right"></i></button>
     </div>
-
-    <button class="button"></button>
+  
   </div>
 </section>
 
