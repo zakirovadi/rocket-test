@@ -1,14 +1,3 @@
-const setWidth = () => {
-    const width = document.documentElement.clientWidth
-    if(width < 1000 && width > 750){
-        tabWindow()
-    }else if(width <= 750){
-        mobileWindow()
-    }else{
-        bigWindow()
-    }
-}
-
 // изменения положения элементов в зависимости от устройства
 const menu = document.querySelector('nav')
 const time = document.querySelector('.header-time')
@@ -18,7 +7,7 @@ const linkPhone = document.querySelector('.header-link-phone')
 const headerInfo = document.querySelector('.header-info')
 const headerLinks = document.querySelector('.header-links')
 
-const tabWindow = () => {
+export const tabHeader = () => {
     changeELemPosition(time, menu)
 
     changeELemPosition(linkPhone, headerLinks)
@@ -26,7 +15,7 @@ const tabWindow = () => {
     changeELemPosition(contact, headerInfo)
 }
 
-const mobileWindow = () => {
+export const mobileHeader = () => {
     changeELemPosition(time, menu)
     changeELemPosition(adress, menu)
 
@@ -34,7 +23,7 @@ const mobileWindow = () => {
     changeELemPosition(contact, menu)
 }
 
-const bigWindow = () => {
+export const mainHeader = () => {
     changeELemPosition(linkPhone, headerLinks)
 
     changeELemPosition(adress, headerInfo)
@@ -47,10 +36,6 @@ const changeELemPosition = (elem, newParent) => {
     elem.parentElement.removeChild(elem)
     newParent.appendChild(elem)
 }
-
-// отслеживание изменения размеров
-window.addEventListener('load', setWidth)
-window.addEventListener('resize', setWidth)
 
 
 

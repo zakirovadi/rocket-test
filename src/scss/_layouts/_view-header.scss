@@ -96,6 +96,15 @@ $light-gray: #CECECE;
   }
 }
 
+@media screen and (max-width: 1200px){
+  .header.container{
+    margin: 0;
+  }
+  .navigation.container{
+    margin: 0 5%;
+  }
+}
+
 @media screen and (max-width: 1000px){
   .header{
     grid-template-columns: 1fr 1.5fr 5fr 1fr;
