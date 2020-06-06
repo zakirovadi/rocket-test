@@ -1,6 +1,6 @@
 <% var data = {
-  title: "Заголовок | Проект",
-  author: "Harrix"
+  title: "test page",
+  author: "Diana"
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
@@ -29,6 +29,93 @@
       <button class="button banner-btn">Оформить заявку <i class="fas fa-long-arrow-alt-right"></i></button>
     </div>
   
+  </div>
+</section>
+
+<section class="main container">
+  <h2>Оборудование которое мы обслуживаем</h2>
+  
+  <div class="main-container-btn">
+    <button class="button">
+      <img src="img/icon/Diagnostic.svg" alt="">
+      Диагностика</button>
+    <button class="button">
+      <img src="img/icon/Repair.svg" alt="">
+      Ремонт</button>
+    <button class="button">
+      <img src="img/icon/Service-hand.svg" alt="">
+      Обслуживание</button>
+    <button class="button">
+      <img src="img/icon/Install.svg" alt="">
+      Монтаж</button>
+  </div>
+
+  <div class="main-container-section">
+    <div class="main-list-container">
+      <h5>Рентгенология</h5>
+      <h5>Томография</h5>
+      <h5>Урология</h5>
+      <h5>Физиотерапия</h5>
+      <h5>Дезинфекция</h5>
+      <h5>Косметология</h5>
+      <h5>Лаборатория</h5>
+      <h5>Косметология</h5>
+      <h5>Лаборатория</h5>
+    </div>
+
+    <div class="main-slider-container">
+      <div class="main-slider-header">
+        <h5>Оборудование</h5>
+        <a class="main-slider-link" href="#">Узнать подробнее <i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+
+      <div class="main-slider">
+        <div class="main-slider-container-img">
+          <div class="main-slider-img">
+            <img src="img/Equipment.png" alt="Equipment">
+            <span>Рентгеновские комплексы</span>
+          </div>          
+          <div class="main-slider-img">
+            <img src="img/Equipment.png" alt="Equipment">
+            <span>Рентгеновские комплексы</span>
+          </div>          
+          <div class="main-slider-img">
+            <img src="img/Equipment.png" alt="Equipment">
+            <span>Рентгеновские комплексы</span>
+          </div>
+        </div>
+
+        <div class="main-slider-paginator">
+          <div class="main-slider-pag-left">
+            <i class="fas fa-chevron-left"></i>
+          </div>
+          <div class="main-slider-paginator">
+            <div class="main-slider-pag-circle"></div>
+            <div class="main-slider-pag-circle"></div>
+            <div class="main-slider-pag-circle"></div>
+            <div class="main-slider-pag-circle"></div>
+            <div class="main-slider-pag-circle"></div>
+          </div>
+          <div class="main-slider-pag-right">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-slider-producer">
+        <div class="main-slider-header">
+          <h5>Производители</h5>
+          <a class="main-slider-link" href="#">Все производители <i class="fas fa-long-arrow-alt-right"></i></a>  
+        </div>
+      
+        <div class="main-slider-container-producer-img">
+          <img src="img/producer-logo/Bosch.png" alt="Bosch">
+          <img src="img/producer-logo/Samsung.png" alt="Samsung">
+          <img src="img/producer-logo/Electrolux.png" alt="Electrolux">
+          <img src="img/producer-logo/Panasonic.png" alt="Panasonic">
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
