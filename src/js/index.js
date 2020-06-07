@@ -1,5 +1,6 @@
 import {tabHeader, mobileHeader, mainHeader} from './header'
 import {mobileBanner, mainBanner} from './banner'
+import {mobMainSlider, bigMainSlider} from './main/main'
 
 
 
@@ -16,8 +17,10 @@ const setWidth = () => {
 
     if(width <= 600){
         mobileBanner()
+        mobMainSlider()
     }else{
         mainBanner()
+        bigMainSlider()
     }
 }
 
